@@ -12,6 +12,15 @@ var eventsApp = angular.module('eventsApp', ['ngResource', 'ngRoute'])
 			templateUrl: 'templates/EventList.html',
 			controller: 'EventListController'
 		});
+		$routeProvider.when('/editProfile',
+		{
+			templateUrl: 'templates/EditProfile.html',
+			controller: 'EditProfileController'
+		});
+		$routeProvider.when('/siteVersion',
+		{
+			template: 'templates/EditProfile.html'
+		});
 		$routeProvider.when('/event/:eventId',
 		{
 			hi: 'bar',
